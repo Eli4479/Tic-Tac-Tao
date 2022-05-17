@@ -61,11 +61,11 @@ divsArr.forEach(div => {
 
 
 
-        if (divsArr[0].classList.contains('o_cell') && divsArr[4].classList.contains('o_cell') && divsArr[8].classList.contains('o_cell')) {
+        if (divsArr[0].classList.contains('x_cell') && divsArr[4].classList.contains('x_cell') && divsArr[8].classList.contains('x_cell')) {
             winner_declare.textContent = 'X WIN,now reset the game';
             cotainer.classList.add('pointer_event');
         }
-        if (divsArr[2].classList.contains('o_cell') && divsArr[4].classList.contains('o_cell') && divsArr[6].classList.contains('o_cell')) {
+        if (divsArr[2].classList.contains('x_cell') && divsArr[4].classList.contains('x_cell') && divsArr[6].classList.contains('x_cell')) {
             winner_declare.textContent = 'X WIN,now reset the game';
             cotainer.classList.add('pointer_event');
         }
