@@ -5,10 +5,41 @@ const player_o = document.querySelector(".player_o")
 const winner_declare = document.querySelector("#winner_declare");
 const cotainer = document.querySelector('.container');
 const title = document.querySelector('.sub_title');
+const x_time = document.querySelector('#x_time');
+const o_time = document.querySelector('#o_time');
+
+
 reset.addEventListener('click', () => {
     location.reload();
 })
 const divsArr = Array.from(square);
+
+var timer = setInterval(() => {
+    if (player_o.classList.contains('current_player') && parseInt(o_time.textContent) > 0) {
+
+        var time_o = parseInt(o_time.textContent);
+        time_o--;
+        o_time.textContent = time_o;
+    }
+    if (player_x.classList.contains('current_player') && parseInt(x_time.textContent) > 0) {
+
+        var time_x = parseInt(x_time.textContent);
+        time_x--;
+        x_time.textContent = time_x;
+    }
+    if (parseInt(o_time.textContent) === 0) {
+        winner_declare.textContent = 'X WIN,now reset the game';
+        cotainer.classList.add('pointer_event');
+    }
+    if (parseInt(x_time.textContent) === 0) {
+        winner_declare.textContent = 'O WIN,now reset the game';
+        cotainer.classList.add('pointer_event');
+    }
+
+}, 1000);
+
+
+
 
 divsArr.forEach(div => {
     div.addEventListener('click', () => {
