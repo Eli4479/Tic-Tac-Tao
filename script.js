@@ -30,10 +30,12 @@ var timer = setInterval(() => {
     if (parseInt(o_time.textContent) === 0) {
         winner_declare.textContent = 'X WIN,now reset the game';
         cotainer.classList.add('pointer_event');
+        clearInterval(timer);
     }
     if (parseInt(x_time.textContent) === 0) {
         winner_declare.textContent = 'O WIN,now reset the game';
         cotainer.classList.add('pointer_event');
+        clearInterval(timer);
     }
 
 }, 1000);
@@ -64,15 +66,20 @@ divsArr.forEach(div => {
         if (divsArr[0].classList.contains('x_cell') && divsArr[1].classList.contains('x_cell') && divsArr[2].classList.contains('x_cell')) {
             winner_declare.textContent = 'X WIN,now reset the game';
             cotainer.classList.add('pointer_event');
+            clearInterval(timer);
         }
         if (divsArr[3].classList.contains('x_cell') && divsArr[4].classList.contains('x_cell') && divsArr[5].classList.contains('x_cell')) {
 
             winner_declare.textContent = 'X WIN,now reset the game';
             cotainer.classList.add('pointer_event');
+            clearInterval(timer);
+
         }
         if (divsArr[6].classList.contains('x_cell') && divsArr[7].classList.contains('x_cell') && divsArr[8].classList.contains('x_cell')) {
             winner_declare.textContent = 'X WIN,now reset the game';
             cotainer.classList.add('pointer_event');
+            clearInterval(timer);
+
         }
 
 
@@ -80,14 +87,20 @@ divsArr.forEach(div => {
         if (divsArr[0].classList.contains('x_cell') && divsArr[3].classList.contains('x_cell') && divsArr[6].classList.contains('x_cell')) {
             winner_declare.textContent = 'X WIN,now reset the game';
             cotainer.classList.add('pointer_event');
+            clearInterval(timer);
+
         }
         if (divsArr[1].classList.contains('x_cell') && divsArr[4].classList.contains('x_cell') && divsArr[7].classList.contains('x_cell')) {
             winner_declare.textContent = 'X WIN,now reset the game';
             cotainer.classList.add('pointer_event');
+            clearInterval(timer);
+
         }
         if (divsArr[2].classList.contains('x_cell') && divsArr[5].classList.contains('x_cell') && divsArr[8].classList.contains('x_cell')) {
             winner_declare.textContent = 'X WIN,now reset the game';
             cotainer.classList.add('pointer_event');
+            clearInterval(timer);
+
         }
 
 
@@ -95,10 +108,14 @@ divsArr.forEach(div => {
         if (divsArr[0].classList.contains('x_cell') && divsArr[4].classList.contains('x_cell') && divsArr[8].classList.contains('x_cell')) {
             winner_declare.textContent = 'X WIN,now reset the game';
             cotainer.classList.add('pointer_event');
+            clearInterval(timer);
+
         }
         if (divsArr[2].classList.contains('x_cell') && divsArr[4].classList.contains('x_cell') && divsArr[6].classList.contains('x_cell')) {
             winner_declare.textContent = 'X WIN,now reset the game';
             cotainer.classList.add('pointer_event');
+            clearInterval(timer);
+
         }
 
 
@@ -106,24 +123,24 @@ divsArr.forEach(div => {
         if (divsArr[0].classList.contains('o_cell') && divsArr[1].classList.contains('o_cell') && divsArr[2].classList.contains('o_cell')) {
             winner_declare.textContent = 'O WIN,now reset the game';
             cotainer.classList.add('pointer_event');
-            console.log('o win');
+            clearInterval(timer);
         }
         if (divsArr[3].classList.contains('o_cell') && divsArr[4].classList.contains('o_cell') && divsArr[5].classList.contains('o_cell')) {
             winner_declare.textContent = 'O WIN,now reset the game';
             cotainer.classList.add('pointer_event');
+            clearInterval(timer);
 
-            console.log('o win');
         }
         if (divsArr[6].classList.contains('o_cell') && divsArr[7].classList.contains('o_cell') && divsArr[8].classList.contains('o_cell')) {
             winner_declare.textContent = 'O WIN,now reset the game';
             cotainer.classList.add('pointer_event');
-            console.log('o win');
+            clearInterval(timer);
         }
 
         if (divsArr[0].classList.contains('o_cell') && divsArr[3].classList.contains('o_cell') && divsArr[6].classList.contains('o_cell')) {
             winner_declare.textContent = 'O WIN,now reset the game';
             cotainer.classList.add('pointer_event');
-            console.log('o win');
+            clearInterval(timer);
         }
         if (divsArr[1].classList.contains('o_cell') && divsArr[4].classList.contains('o_cell') && divsArr[7].classList.contains('o_cell')) {
             winner_declare.textContent = 'O WIN,now reset the game';
@@ -133,18 +150,18 @@ divsArr.forEach(div => {
         if (divsArr[2].classList.contains('o_cell') && divsArr[5].classList.contains('o_cell') && divsArr[8].classList.contains('o_cell')) {
             winner_declare.textContent = 'O WIN,now reset the game';
             cotainer.classList.add('pointer_event');
-            console.log('o win');
+            clearInterval(timer);
         }
 
         if (divsArr[0].classList.contains('o_cell') && divsArr[4].classList.contains('o_cell') && divsArr[8].classList.contains('o_cell')) {
             winner_declare.textContent = 'O WIN,now reset the game';
             cotainer.classList.add('pointer_event');
-            console.log('o win');
+            clearInterval(timer);
         }
         if (divsArr[2].classList.contains('o_cell') && divsArr[4].classList.contains('o_cell') && divsArr[6].classList.contains('o_cell')) {
             winner_declare.textContent = 'O WIN,now reset the game';
             cotainer.classList.add('pointer_event');
-            console.log('o win');
+            clearInterval(timer);
         }
     }
 });
